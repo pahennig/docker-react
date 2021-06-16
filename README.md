@@ -1,3 +1,8 @@
+### Usage
+Repository was created to integrate with [Travis CI](https://travis-ci.com/).<br />
+Below, just the reference of React
+___
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
