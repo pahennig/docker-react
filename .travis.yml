@@ -13,7 +13,7 @@ deploy:
   provider: elasticbeanstalk
   region: "sa-east-1"
   app: "prhdocker" #Name of app from AWS
-  environment: "Prhdocker-env"
+  env: "Prhdocker-env"
   bucket_name: "elasticbeanstalk-sa-east-1-708693232591"
   bucket_path: "prhdocker" # same as app
   on:
