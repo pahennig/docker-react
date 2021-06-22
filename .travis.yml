@@ -8,3 +8,15 @@ before_install:
 
 script:
   - docker run -e CI=true pahennig/docker-react npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "sa-east-1"
+  app: "prhdocker" #Name of app from AWS
+  environment: "Prhdocker-env"
+  bucket_name: "elasticbeanstalk-sa-east-1-708693232591"
+  bucket_path: "prhdocker" # same as app
+  on:
+    branch: "master"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
