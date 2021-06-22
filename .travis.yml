@@ -12,10 +12,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "sa-east-1"
-  app: "docker" #Name of app from AWS
-  environment: "Docker-env"
-  bucket_name: ""
-  bucket_path: "docker" # same as app
+  app: "prhdocker" #Name of app from AWS
+  environment: "Prhdocker-env"
+  bucket_name: "elasticbeanstalk-sa-east-1-708693232591"
+  bucket_path: "prhdocker" # same as app
   on:
     branch: "master"
   access_key_id: $AWS_ACCESS_KEY
